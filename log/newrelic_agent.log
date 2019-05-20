@@ -1,0 +1,22 @@
+# Logfile created on 2019-05-20 17:06:36 +0530 by logger.rb/61378
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Starting the New Relic agent in "development" environment.
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Reading configuration from config/newrelic.yml (/var/www/html/i-dream-i-dare-master)
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : New Relic Agent Developer Mode enabled.
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Environment: development
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : No known dispatcher detected.
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Application: i-dream-i-dare
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] WARN : Agent configured not to send data in this environment.
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing middleware-based Excon instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Rails 3+ middleware instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing ActiveJob instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing ActiveRecord 4 instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Net instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Rails 4 Controller instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Rails 4 Error instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Installing Rails 4 view instrumentation
+[2019-05-20 17:06:36 +0530 neo-crew (18866)] INFO : Finished instrumentation
+[2019-05-20 17:06:37 +0530 neo-crew (18866)] INFO : Doing deferred dependency-detection before Rack startup

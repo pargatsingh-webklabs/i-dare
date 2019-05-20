@@ -1,0 +1,256 @@
+** [Honeybadger] Initializing Honeybadger Error Tracker for Ruby. Ship it! version=3.0.2 framework=rails level=1 pid=18866
+** [Honeybadger] Entering development mode: data will not be reported. level=2 pid=18866
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-20 17:06:46 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#view as HTML
+Redirected to http://localhost:3000/landing_page
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/landing_page" for 127.0.0.1 at 2019-05-20 17:06:46 +0530
+Processing by AdminMessagesController#landing_page as HTML
+  Rendered shared/_public_logo_and_nav.html.erb (2.5ms)
+  [1m[35mBookResource Load (0.5ms)[0m  SELECT "book_resources".* FROM "book_resources" WHERE "book_resources"."active" = $1  [["active", "t"]]
+  Rendered admin_messages/_landing_page_info_content.html.erb (30.7ms)
+  Rendered admin_messages/_form.html.erb (5.7ms)
+  Rendered admin_messages/landing_page.html.erb within layouts/application (75.8ms)
+  Rendered application/_css_overrides.html.erb (0.7ms)
+Completed 200 OK in 15082ms (Views: 15024.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2019-05-20 17:07:02 +0530
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:34:in `block in call'
+  honeybadger (3.0.2) lib/honeybadger/agent.rb:321:in `with_rack_env'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:31:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_feedback.rb:29:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_informer.rb:19:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+  puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (35.0ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.2ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.8ms)
+** [Honeybadger] Unable to send error report: API key is missing. id=aabefd90-a3b1-4598-bf0b-b279dc97a982 level=3 pid=18909
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2019-05-20 17:07:03 +0530
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:34:in `block in call'
+  honeybadger (3.0.2) lib/honeybadger/agent.rb:321:in `with_rack_env'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:31:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_feedback.rb:29:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_informer.rb:19:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+  puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (34.7ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.3ms)
+** [Honeybadger] Unable to send error report: API key is missing. id=0f447c81-760c-40ae-965d-c1c14cce0296 level=3 pid=18897
+
+ActionController::RoutingError (No route matches [GET] "/assets/loader.gif"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:34:in `block in call'
+  honeybadger (3.0.2) lib/honeybadger/agent.rb:321:in `with_rack_env'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:31:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_feedback.rb:29:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_informer.rb:19:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+  puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+** [Honeybadger] Unable to send error report: API key is missing. id=ee8441cb-3013-4476-acd5-07d9b1790d89 level=3 pid=18897
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2019-05-20 17:07:04 +0530
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:34:in `block in call'
+  honeybadger (3.0.2) lib/honeybadger/agent.rb:321:in `with_rack_env'
+  honeybadger (3.0.2) lib/honeybadger/rack/error_notifier.rb:31:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_feedback.rb:29:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  honeybadger (3.0.2) lib/honeybadger/rack/user_informer.rb:19:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.18.1.330) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+  puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (39.3ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/neo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.5ms)
+** [Honeybadger] Unable to send error report: API key is missing. id=b7281f9e-3697-4e71-86c3-11aec6001b94 level=3 pid=18897

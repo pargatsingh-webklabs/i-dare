@@ -1,0 +1,88 @@
+@charset "UTF-8";
+#meetUs .landing-page-logo {
+  max-width:80%;
+  height:auto;
+}
+#meetUs .container {
+  display: flex;
+}
+#meetUs .bio_coach_profile {
+  margin-right: 50px;
+  min-height: 400px;
+  clear: left;
+  font-size: 1.2em;
+  margin-bottom: 4%;
+  background-color: #f0f0f0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#meetUs .profile-body {
+
+}
+#meetUs .name {
+	font-family:Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+  line-height: initial;
+}
+#meetUs .bio-pic {
+	float: left;
+  margin-bottom:0%;
+}
+#meetUs .style-expertise-show-more-link {
+  position: relative;
+  bottom: 0;
+}
+#meetUs .show-more-content{
+  display: block;
+  column-count: 2;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: grey;
+  column-width: 100px;
+  column-gap: 40px;
+}
+#meetUs .bio-question {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#meetUs .bio-answer {
+  font-style: italic;
+}
+#meetUs .q-a{
+  page-break-inside: avoid;
+  line-height: 1.5em
+}
+#meetUs .bio-profile-text{
+
+}
+#meetUs hr {
+  width:100%;
+  height: 2px;
+  background-color: lightgray;
+}
+#meetUs a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}

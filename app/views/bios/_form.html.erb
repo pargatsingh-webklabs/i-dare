@@ -1,0 +1,41 @@
+<%= form_for(@bio) do |f| %>
+  <% if @bio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bio.errors.count, "error") %> prohibited this bio from being saved:</h2>
+
+      <ul>
+      <% @bio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="dropdown">
+    <%= f.label :user_id %><br>
+    <%= f.collection_select :user_id, @all_coaches.select { |u| u.is_active == true }, :id, :full_name, include_blank: true %>
+  </div>
+  <hr>
+  <div class="field">
+    <%= f.label :profile_image %><br>
+    <%= f.text_field :profile_image, style: "width:50%;" %>
+  </div>
+  <hr>
+  <div class="field" style="width:50%;">
+    <%= f.label :profile_text %><br>
+    <%= f.trix_editor :profile_text, class: 'trix-content' %>
+  </div>
+  <hr>
+  <div class="field" style="width:50%;">
+    <%= f.label :style_text %><br>
+    <%= f.trix_editor :style_text, class: 'trix-content' %>
+  </div>
+  <hr>
+  <div class="field" style="width:50%;">
+    <%= f.label :expertise %><br>
+    <%= f.trix_editor :expertise, class: 'trix-content' %>
+  </div>
+  <hr>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

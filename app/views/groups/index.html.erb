@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Groups</h1>
+
+<p>
+  <button>
+    <%= link_to 'New Group', new_group_path %>
+  </button>
+</p>
+
+<table class="table table-bordered table-striped" >
+  <thead>
+    <tr>
+      <th>Creator</th>
+      <th>Privacy</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% if @groups != nil %>
+      <% @groups.each do |group| %>
+        <tr>
+          <td><%= group.creator %></td>
+          <td><%= group.privacy %></td>
+          <td><%= group.name %></td>
+          <td><%= group.description %></td>
+          <td>
+            <%= link_to 'Show', group %>
+            <%= link_to 'Edit', edit_group_path(group) %>
+            <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

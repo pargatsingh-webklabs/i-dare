@@ -1,0 +1,56 @@
+<%= form_for(@resource) do |f| %>
+  <% if @resource.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
+      <ul>
+      <% @resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div style="color:red;">Resource Type IDs are below:
+    <br />2 - Link
+    <br />3 - File
+    <br />4 - Note
+    <br />5 - Image
+    <br />
+  </div>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div style="color:red;">
+    Note: If this is a link or a file, you will need to use the ENTIRE url below (example: Use "http://www.google.com/" instead of just "Google") for it to be displayed and to function properly throughout the site.
+  </div>
+  <div class="field">
+    <%= f.label :resource_string %><br>
+    <%= f.text_area :resource_string %>
+  </div>
+  <div class="field">
+    <%= f.label :resource_type_id %><br>
+    <%= f.number_field :resource_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_1 %><br>
+    <%= f.text_field :tag_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_2 %><br>
+    <%= f.text_field :tag_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_3 %><br>
+    <%= f.text_field :tag_3 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,36 @@
+<%= form_for(@content_field) do |f| %>
+  <% if @content_field.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@content_field.errors.count, "error") %> prohibited this content_field from being saved:</h2>
+
+      <ul>
+      <% @content_field.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="hide-this">
+    <div class="field">
+      <% if current_user.is_an_admin? %>
+        <%= f.number_field :client, :value => @active_user_id %>
+      <% else %>
+        <%= f.number_field :client, :value => @current_user.id %>
+      <% end %>  
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, style: "width:50%;"%>
+  </div>
+  <br>
+
+    <%= f.label :value %><br>
+    <%= f.trix_editor :value, class: 'trix-content' %>
+
+  <div class="actions" style="margin-top:10px;">
+    <%= f.submit %>
+  </div>
+<% end %>

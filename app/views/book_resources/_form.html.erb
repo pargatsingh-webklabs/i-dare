@@ -1,0 +1,25 @@
+<%= form_for(@book_resource) do |f| %>
+  <% if @book_resource.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book_resource.errors.count, "error") %> prohibited this book_resource from being saved:</h2>
+
+      <ul>
+      <% @book_resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :file %><br>
+    <%= f.file_field :file, cols: "50", rows: "1" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
